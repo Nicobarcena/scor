@@ -10,7 +10,7 @@ const Home = () => {
           <Link className='links' hrefLang='/'>Inicio</Link>
           <Link className='links' hrefLang='/'>Leardoard</Link>
           <Link className='links' hrefLang='/'>Categorias</Link>
-          <Link className='links' hrefLang='/'>Work Outs</Link>
+          <Link className='links' Navigate to="/Hola">Work Outs</Link>
         </ul>
       </nav>
     </div>
