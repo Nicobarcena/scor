@@ -13,7 +13,7 @@ const Login = () => {
     if (username && password) {
       setRedirectToHome(true);
     } else {
-      setErrorMessage('Please fill in all fields.');
+      setErrorMessage('Por favor complete todos los datos');
     }
   };
 
@@ -26,23 +26,23 @@ const Login = () => {
 
   return (
     <div class="login-container">
-      <h2 class="login-title">Sign In</h2>
+      <h2 class="login-title">Inicio de sesion</h2>
       <form class="login-form">
         {errorMessage && <p class="error-message">{errorMessage}</p>}
         <div class="form-group">
-          <label class="form-label" htmlFor="username">Username:</label>
+          <label class="form-label" htmlFor="username">Usuario:</label>
           <input type="text" id="username" class="form-input" value={username} onChange={(e) => setUsername(e.target.value)} />
         </div>
         <div class="form-group">
-          <label class="form-label" htmlFor="password">Password:</label>
+          <label class="form-label" htmlFor="password">Contraseña:</label>
           <input type="password" id="password" class="form-input" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
         <div class="button-group">
-          <button type="button" class="login-button"n onClick={handleLogin}>
-            Sign In
+          <button type="button" class="login-button" onClick={handleLogin}>
+            Iniciar
           </button>
           <button type="button" class="register-button" onClick={() => setRedirectToRegistro(true)}>
-            Register
+            Registarte
           </button>
         </div>
       </form>
