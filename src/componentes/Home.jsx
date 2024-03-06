@@ -3,18 +3,42 @@ import "./Home.css"
 import { Link } from 'react-router-dom'
 
 const Home = () => {
+
   return (
-    <div className='contenedor'>
-      <h1>Bienvenidos</h1>
-      <nav className='navbar'>
-        <ul className='nav-items'>
-          <Link className='links' to="/">Inicio</Link>
-          <Link className='links' to="/leardoard">Leardoard</Link>
-          <Link className='links' to="/Categorias">Categorias</Link>
-          <Link className='links' to="/Wods">Work Outs</Link>
+    <>
+    <nav >
+    <div>
+        <ul >
+          <li >
+            <a  href="#">Home</a>
+          </li>
+          <li >
+            <a  href="#">LeaderBoard</a>
+          </li>
+          <li >
+            <a  href="#">Eventos</a>
+          </li>
+          <li >
+            <a >Work Outs</a>
+          </li>
         </ul>
-      </nav>
+        </div>
+        <a href="#" class="profile-button"><img src="colo.jpg" alt="Profile"/></a>   
+  </nav>
+
+  <div className="card-container">
+  <div className="card">
+    <img src="..." alt="..." />
+    <div>
+      <h5>Card title</h5>
+      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#">Go somewhere</a>
     </div>
+  </div>
+</div>
+
+
+  </>
   )
 }
 
